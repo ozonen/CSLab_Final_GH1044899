@@ -6,7 +6,32 @@
   -mistyped letters turn red
   -remaining text stays gray
 3)The player scores 1 point after completing one word correctly. And player should press "space" to move on to the next word.
-4)The countdown starts from 60 seconds.
-5)When the time runs out a pop up window will show up and tell you your score.
+4)The countdown starts from 60 seconds
+5)When the time runs out a pop up window will show up and tell you your score
 
--Main Class
+-Main Class - Pokemon_Monkey_Typer
+1)This class contains all the game logic, Event handling and the gui setup
+2)It extends JFrame and it means that the game runs inside a swing window
+3)And this class implements KeyListener and ActionListener
+ -KeyListener: for keyboard inputs
+ -ActionListener: for time countdown
+
+-Swing components I used
+1)JFrame: creates the game window
+2)JLabel: displays all the text (paragraph, timer)
+3)Timer: runs the countdown
+4)JOptionPane: final score pop-up
+5)Font: style, text font 
+
+-Events
+1)KeyListener
+  -keyTyped: detects normal keys and space 
+  -keyPressed: detects backspace
+  -keyReleased: it is required when you use the keylistener but i didn't use this in my code
+2)ActionListener
+  -actionPerformed: runs every second to decrease the timer
+
+-Other utility classes used in the code
+1)ArrayList: Stores all the words 
+2)Random: Choosing random words from the array list
+3)StringBuilder: Builds the paragraph in a html style text to make it look more stylish
