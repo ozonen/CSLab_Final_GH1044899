@@ -1,0 +1,12 @@
+"Game Structure and how the game works"
+
+1)A paragraph of 50 words appears on the screen
+2)The user starts typing
+  -correct letters turns black
+  -mistyped letters turn red
+  -remaining text stays gray
+3)The player scores 1 point after completing one word correctly. And player should press "space" to move on to the next word.
+4)The countdown starts from 60 seconds.
+5)When the time runs out a pop up window will show up and tell you your score.
+
+-Main Class
